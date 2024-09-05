@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #bababa;
+    margin: 20px;
+}
+nav{
+    background-color: #333;
+    overflow: hidden;
+    text-align: center;
+    padding: 2px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-bottom: 10px;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+}
+
+h1 {
+    margin-top:auto;
+    background-color: rgb(0, 90, 0);
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.sect1 {
+    background-color: white;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.sect2 {
+    background-color: white;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.cardcontainer {
+    width: 50%;
+    margin: auto;
+}
+.card {
+    background-color: #efefef;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    order: 1;
+    justify-content: space-between;
+    align-items: center;
+}
+.card:hover {
+    transition: 0.2s;
+    transform: scale(105%);
+    background-color: #bababa;
+}
+
+ul {
+    list-style: none;
+}
+footer {
+    margin-top:auto;
+    background-color: rgb(0, 90, 0);
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Backgrounds for excersise types: */
+
+.mild-combat {
+    background-color: rgba(255, 0, 0, 0.1); /* Mild red for combat */
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.mild-physical {
+    background-color: rgba(0, 255, 0, 0.1); /* Mild green for physical */
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.mild-endurance {
+    background-color: rgba(0, 0, 255, 0.1); /* Mild blue for endurance */
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.mild-tactical {
+    background-color: rgba(255, 165, 0, 0.1); /* Mild orange for tactical */
+    border-radius: 10px;
+    padding: 5px;
+}

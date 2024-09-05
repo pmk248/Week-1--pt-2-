@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <nav class="navbar">
-        <a href="#" id="xunderline">Home</a>
-        <a href="#" id="xunderline">Training Schedule</a>
-        <a href="#" id="xunderline">Equipment</a>
-        <a href="#" id="xunderline">Contact Us</a>
+        <a href="#">Home</a>
+        <a href="#">Training Schedule</a>
+        <a href="#">Equipment</a>
+        <a href="#">Contact Us</a>
     </nav>
     <div>
         <h1>
@@ -18,18 +19,18 @@
         </h1>
     </div>
     <div class="sect1">
-        <h3>Welcome to the Army Training Portal</h3>
+        <h2>Welcome to the Army Training Portal</h2>
         <h6>The portal provides information on upcoming excercises and other essential details for our soldiers. Use the schedule below to keep track of your training</h6>
     </div>
     <div class="sect2">
-        <h3>Upcoming Training Schedule</h3>
+        <h2>Upcoming Training Schedule</h2>
         <h6>Date: 05-09-2024</h6>
         <div class="cardcontainer">
             <div class="card" href="exampg2.html">
                 <ul>
                     <li><h>06-09-2024</h></li>
                     <li><h>Morning Run - 5km</h></li>
-                    <li><span id="vbackground">Physical</span id="vbackground"></li>
+                    <li><span id="vbackground">Physical</span></li>
                 </ul>
                 <h>Instructor: Sgt Johnson</h>
             </div>
@@ -38,7 +39,7 @@
                 <ul>
                     <li><h>06-09-2024</h></li>
                     <li><h>Rifle Training - Marksmanship</h></li>
-                    <li><span id="vbackground">Comspan id="vbackground"at</span id="vbackground"></li>
+                    <li><span id="vbackground">Combat</span></li>
                 </ul>
                 <h>Instructor: Lt James</h>
             </div>
@@ -46,8 +47,8 @@
             <div class="card" href="exampg2.html">
                 <ul>
                     <li><h>07-09-2024</h></li>
-                    <li><h>Ospan id="vbackground"stacle Course - 3 laps</h></li>
-                    <li><span id="vbackground">Physical</span id="vbackground"></li>
+                    <li><h>Obstacle Course - 3 laps</h></li>
+                    <li><span id="vbackground">Physical</span></li>
                 </ul>
                 <h>Instructor: Sgt Williams</h>
             </div>
@@ -55,8 +56,8 @@
             <div class="card" href="exampg2.html">
                 <ul>
                     <li><h>07-09-2024</h></li>
-                    <li><h>Comspan id="vbackground"at Tactics - Squad Drills</h></li>
-                    <li><span id="vbackground">Tactical</span id="vbackground"></li>
+                    <li><h>Combat Tactics - Squad Drills</h></li>
+                    <li><span id="vbackground">Tactical</span></li>
                 </ul>
                 <h>Instructor: Capt Reed</h>
             </div>
@@ -65,7 +66,7 @@
                 <ul>
                     <li><h>08-09-2024</h></li>
                     <li><h>Field March - 10km</h></li>
-                    <li><span id="vbackground">Endurance</span id="vbackground"></li>
+                    <li><span id="vbackground">Endurance</span></li>
                 </ul>
                 <h>Instructor: Sgt Thompson</h>
             </div>
@@ -73,17 +74,17 @@
             <div class="card" href="exampg2.html">
                 <ul>
                     <li><h>08-09-2024</h></li>
-                    <li><h>Urspan id="vbackground"an Warfare - span id="vbackground"uilding Entry</h></li>
-                    <li><span id="vbackground">Comspan id="vbackground"at</span id="vbackground"></li>
+                    <li><h>Urban Warfare - Building Entry</h></li>
+                    <li><span id="vbackground">Combat</span></li>
                 </ul>
-                <h>Instructor: Lt span id="vbackground"rooks</h>
+                <h>Instructor: Lt Brooks</h>
             </div>
             
             <div class="card" href="exampg2.html">
                 <ul>
                     <li><h>08-09-2024</h></li>
                     <li><h>Night Recon - Stealth Operations</h></li>
-                    <li><span id="vbackground">Tactical</span id="vbackground"></li>
+                    <li><span id="vbackground">Tactical</span></li>
                 </ul>
                 <h>Instructor: Capt Miller</h>
             </div>
@@ -91,8 +92,8 @@
             <div class="card" href="exampg2.html">
                 <ul>
                     <li><h>09-09-2024</h></li>
-                    <li><h>Hand-to-Hand Comspan id="vbackground"at Training</h></li>
-                    <li><span id="vbackground">Comspan id="vbackground"at</span id="vbackground"></li>
+                    <li><h>Hand-to-Hand Combat Training</h></li>
+                    <li><span id="vbackground">Combat</span></li>
                 </ul>
                 <h>Instructor: Sgt Riley</h>
             </div>            
@@ -103,3 +104,19 @@
     </footer>
 </body>
 </html>
+
+<script>
+    document.querySelectorAll('#vbackground').forEach(function(element) {
+        const text = element.textContent.trim();
+        
+        if (text.includes('Combat')) {
+            element.classList.add('mild-combat');
+        } else if (text.includes('Physical')) {
+            element.classList.add('mild-physical');
+        } else if (text.includes('Endurance')) {
+            element.classList.add('mild-endurance');
+        } else if (text.includes('Tactical')) {
+            element.classList.add('mild-tactical');
+        }
+    });
+</script>
