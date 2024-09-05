@@ -10,6 +10,7 @@ nav{
     overflow: hidden;
     text-align: center;
     padding: 2px;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -23,6 +24,7 @@ nav a{
 }
 
 h1 {
+    left: 0;
     margin-top:auto;
     background-color: rgb(0, 90, 0);
     width: 100%;
@@ -37,17 +39,21 @@ a {
 }
 
 .sect1 {
+    text-align: left;
     background-color: white;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
     padding: 10px;
+    padding-left: 20px;
     margin: 10px;
     border-radius: 10px;
 }
 
 .sect2 {
+    text-align: left;
     background-color: white;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
     padding: 10px;
+    padding-left: 20px;
     margin: 10px;
     border-radius: 10px;
 }
@@ -55,7 +61,7 @@ a {
 .cardcontainer {
     width: 50%;
     margin: auto;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
 }
 .card {
     background-color: #efefef;
@@ -67,6 +73,7 @@ a {
     order: 1;
     justify-content: space-between;
     align-items: center;
+    font-size: 12px;
 }
 .card:hover {
     transition: 0.2s;
@@ -75,8 +82,13 @@ a {
     cursor: pointer;
 }
 
+
 ul {
     list-style: none;
+    text-align: left;
+}
+ul {
+    font-size: 12px;
 }
 
 footer {
@@ -84,7 +96,7 @@ footer {
     width: 100%;
     color: white;
     text-align: center;
-    padding: 2pxpx;
+    padding: 0.1px;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -121,22 +133,26 @@ footer {
     background-color: rgba(255, 0, 0, 0.1); /* Mild red for combat */
     border-radius: 10px;
     padding: 5px;
+    font-size: 12px;
 }
 
 .mild-physical {
     background-color: rgba(0, 255, 0, 0.1); /* Mild green for physical */
     border-radius: 10px;
     padding: 5px;
+    font-size: 12px;
 }
 
 .mild-endurance {
     background-color: rgba(0, 0, 255, 0.1); /* Mild blue for endurance */
     border-radius: 10px;
     padding: 5px;
+    font-size: 12px;
 }
 
 .mild-tactical {
     background-color: rgba(255, 165, 0, 0.1); /* Mild orange for tactical */
     border-radius: 10px;
     padding: 5px;
+    font-size: 12px;
 }
