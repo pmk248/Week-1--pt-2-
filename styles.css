@@ -145,12 +145,14 @@ footer {
 
 .mild-endurance {
     background-color: rgba(0, 0, 255, 0.1); 
+    border-radius: 10px;
     padding: 5px;
     font-size: 12px;
 }
 
 .mild-tactical {
     background-color: rgba(255, 165, 0, 0.1); 
+    border-radius: 10px;
     padding: 5px;
     font-size: 12px;
 }
